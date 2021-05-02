@@ -1,0 +1,10 @@
+query Bills {
+  bills(jurisdiction: "ocd-jurisdiction/country:us/territory:pr/government", first: 5) {
+    edges {
+        node {
+            id
+            name
+        }
+    }
+  }
+}
