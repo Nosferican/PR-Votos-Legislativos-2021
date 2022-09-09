@@ -20,6 +20,7 @@ conn = Connection("dbname=postgres user=postgres password=postgres")
 ENV["WEBDRIVER_HOST"] = get(ENV, "WEBDRIVER_HOST", "localhost")
 ENV["WEBDRIVER_PORT"] = get(ENV, "WEBDRIVER_PORT", "4444")
 
+const CLIENT = GraphQLClient("https://openstates.org/graphql",
                              )
 
 const MESES = Dict(zip(["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
